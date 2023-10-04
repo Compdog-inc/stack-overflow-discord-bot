@@ -8,7 +8,7 @@ export default async function Search(title: string, tags: string[]): Promise<Que
         sort: 'relevance',
         tagged: tags.reduce((a, b) => a + ";" + b),
         title: title,
-        filter: 'default'
+        filter: '!6WPIomnDXnI5r'
     })).items;
 }
 
