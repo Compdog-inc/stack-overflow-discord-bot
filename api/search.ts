@@ -6,7 +6,7 @@ export default async function Search(title: string, tags: string[]): Promise<Que
         site: 'stackoverflow',
         order: 'desc',
         sort: 'relevance',
-        tagged: tags.reduce((a, b) => a + ";" + b),
+        tagged: tags.length > 0 ? tags.reduce((a, b) => a + ";" + b) : [],
         title: title,
         filter: '!6WPIomnDXnI5r'
     })).items;
